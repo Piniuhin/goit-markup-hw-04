@@ -17,11 +17,7 @@
 html {
     box-sizing: border-box;
 }
-*,/*
-*::before,
-*::after {
-    box-sizing: inherit;
-}*/
+
 
 body {
     margin: 0;
@@ -108,7 +104,22 @@ img {
     text-decoration: none;
     color: var(--title-text-color);
 }
-
+.icon-link {
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+}
+.icon-link:hover,
+.icon-link:focus {
+    color: var(--accent-color);
+}
+.icon-link .icon:hover, 
+.icon-link .icon:focus {
+    fill: var(--accent-color);
+}
+.icon {
+    fill: var(--primary-text-color);
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -204,6 +215,10 @@ img {
 }
 .feature-icon-wrap {
     background-color: var(--background-color-icon-social-links);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .feature-list .item + .item {
     margin-left: 30px;
